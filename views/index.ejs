@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <!--Form input-->
+    <h1 class="tb-1"><%=City%></h1>
+    <div class = "weather-card">
+        <form action="/search" method="post">
+            <input class = "form ip" name = "cityname" type="text" placeholder="City Name" autocomplete="off">
+            <button class = "form search-btn" name="submit">Search</button>
+        </form>
+        <p class = "temp"><%=Temp%>°C</p>
+        <img class = "icon" src=<%=Icon%>>
+        <p class = 'main'><%=Main%></p>
+        <p class = 'des'><%=Des%></p>
+    </div>
+</body>
+</html>
